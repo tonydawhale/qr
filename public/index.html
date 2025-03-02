@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>qr</title>
+    <meta name="description" content="QR Code Generator" />
+    <meta name="keywords" content="QR, Code, Generator" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[Montserrat] bg-gray-900 flex h-screen justify-center items-center select-none flex-col gap-4">
+    <h1>
+        <span class="text-6xl text-zinc-200">QR</span>
+        <span class="text-6xl text-zinc-800">Code</span>
+        <span class="text-6xl text-zinc-200">Generator</span>
+    </h1>
+    <form method="post" action="/" id="form" enctype="multipart/form-data">
+        <div class="flex flex-col gap-2 items-center">
+            <input name="link" type="text" class="h-16 w-[40vw] text-2xl text-zinc-300 rounded-lg bg-slate-500 border-4 border-slate-600 focus:outline-none focus:ring-4 focus:ring-slate-700 focus:border-transparent px-2 py-1"/>
+            <button type="submit" class="rounded-md bg-zinc-200 border-4 border-zinc-400 text-zinc-800 font-bold p-2 transition transform hover:scale-105">Generate QR Code</button>
+        </div>
+    </form>
+    <div>
+        <p class="text-zinc-200">Made with <span class="text-zinc-800">❤</span> by <a href="https://tonydoes.dev/" class="text-zinc-400">tony</a></p>
+    </div>
+</body>
+</html>
